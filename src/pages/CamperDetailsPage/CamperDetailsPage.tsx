@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { Container, Typography, CircularProgress, CardMedia, Box } from '@mui/material';
-import { getCamperById } from '../services/campersService';
-import { Camper } from '../redux/types';
+import { getCamperById } from '../../services/campersService';
+import { Camper } from '../../redux/types';
 
 const CamperDetailsPage: React.FC = () => {
   const { id } = useParams();

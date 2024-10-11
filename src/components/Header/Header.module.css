@@ -1,0 +1,33 @@
+.headerContainer{
+background: #F7F7F7;
+border-bottom: 1px solid #F2F4F7;
+
+display: flex;
+width: 1440px;
+/* padding: 24px 64px; */
+align-items: center;
+gap: 450px;
+}
+
+.homeLogo{
+    width: 136px;
+    height: 16px;
+    flex-shrink: 0;
+    padding-right: 450px;
+}
+
+.btnHeader{
+    color:  #101828;
+    text-align: center;
+    /* Body 2 */
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 150% */
+    padding: 32px;
+}
+
+.btnHeader:hover{
+    color: #D84343;
+}

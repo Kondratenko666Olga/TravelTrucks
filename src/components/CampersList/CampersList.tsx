@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react';
 import { Box, Card, CardMedia, CardContent, Typography, CircularProgress } from '@mui/material';
-import { useAppDispatch, useAppSelector } from '../redux/hooks';
-import { fetchCampers } from '../redux/campersSlice';
-import { Camper } from '../redux/types'; // Переконайтеся, що ви імпортували правильний тип
+import { useAppDispatch, useAppSelector } from '../../redux/hooks';
+import { fetchCampers } from '../../redux/campersSlice';
+import { Camper } from '../../redux/types'; // Переконайтеся, що ви імпортували правильний тип
 
 const CampersList: React.FC = () => {
   const dispatch = useAppDispatch();
