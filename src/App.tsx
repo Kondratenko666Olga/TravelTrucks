@@ -5,7 +5,7 @@ import CatalogPage from './pages/CatalogPage/CatalogPage';
 import CamperDetailsPage from './pages/CamperDetailsPage/CamperDetailsPage';
 import ReviewsPage from './pages/ReviewsPage/ReviewsPage';
 import Header from './components/Header/Header';
-import Footer from './components/Footer/Footer';
+// import Footer from './components/Footer/Footer';
 import { ThemeProvider } from '@mui/material/styles';
 import theme from './theme';
 
@@ -20,7 +20,7 @@ const App: React.FC = () => {
           <Route path="/catalog/:id" element={<CamperDetailsPage />} />
           <Route path="/catalog/:id/reviews" element={<ReviewsPage />} />
         </Routes>
-        <Footer />
+        {/* <Footer /> */}
       </Router>
     </ThemeProvider>
   );

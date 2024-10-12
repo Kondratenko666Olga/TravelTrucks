@@ -3,29 +3,23 @@
     background-size: cover;
     background-position: center;
     height: 100vh;
-    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 64px;
 }
 
 .homeBox{
-
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
 }
 
-.h3Box{
 
+.textBox{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
 }
 
-.h5Box{
-
-}
-
-.buttonBox{
-padding: 12px 24px; /* Внутрішні відступи */
-font-size: 16px; /* Розмір шрифту */
-font-weight: bold; /* Жирний шрифт */
-color: white; /* Колір тексту */
-background-color: #3f51b5; /* Колір фону */
-border: none; /* Без рамки */
-border-radius: 4px; /* Закруглені кути */
-cursor: pointer; /* Курсор у вигляді вказівника */
-transition: background-color 0.3s; /* Анімація фону при наведенні */
-}

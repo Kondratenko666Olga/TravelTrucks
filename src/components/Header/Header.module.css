@@ -4,30 +4,34 @@ border-bottom: 1px solid #F2F4F7;
 
 display: flex;
 width: 1440px;
-/* padding: 24px 64px; */
 align-items: center;
 gap: 450px;
+
+padding: 16px 64px;
+
+position: static;
 }
 
-.homeLogo{
-    width: 136px;
-    height: 16px;
-    flex-shrink: 0;
-    padding-right: 450px;
+
+.headerTolbar{
+    gap: 32px;
 }
 
-.btnHeader{
-    color:  #101828;
-    text-align: center;
-    /* Body 2 */
-    font-family: Inter;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 24px; /* 150% */
-    padding: 32px;
+@media screen and (max-width: 1200px) {
+    .headerTolbar  {
+        margin-left: auto;
+    }
+    .headerContainer {
+        gap: 0;
+    }
 }
 
-.btnHeader:hover{
-    color: #D84343;
+
+@media screen and (min-width: 1199px) {
+    .headerTolbar  {
+        margin-left: none;
+    }
+    .headerContainer {
+        gap: 450px;
+    }
 }
