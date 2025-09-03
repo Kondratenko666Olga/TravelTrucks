@@ -24,7 +24,9 @@ export const fetchCamperById = createAsyncThunk(
 export const campersSlice = createSlice({
   name: 'campers',
   initialState: {
-    campersList: [],          // Масив всіх кемперів
+    campersList: {
+      items: []
+    },          // Масив всіх кемперів
     camperDetails: null,       // Деталі одного кемпера
     status: 'idle',            // Статус для запитів (idle, loading, succeeded, failed)
     error: null as string | null,               // Зберігання помилки, якщо вона є

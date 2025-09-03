@@ -36,17 +36,15 @@ const HeaderButton = styled(Button)({
 
 const Header: React.FC = () => {
   return (
-    <AppBar>
+    <AppBar position='static'>
       <Container disableGutters={true} className={styles.headerContainer} maxWidth={false}>
       <img src={logo} alt="TravelTrucks Logo" className={styles.homeLogo} />
         <Toolbar className={styles.headerTolbar}>
-          <HeaderButton>
-          {/* component={Link} to="/" */}
-            Home
+          <HeaderButton href="/">
+                      Home
           </HeaderButton>
-          <HeaderButton>
-          {/* component={Link} to="/catalog" */}
-            Catalog
+          <HeaderButton href="/catalog">
+                      Catalog
           </HeaderButton>
         </Toolbar>
       </Container>

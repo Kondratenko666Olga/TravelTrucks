@@ -3,7 +3,7 @@ export interface Camper {
     name: string;
     price: number;
     description: string;
-    imageUrl: string;
+    gallery: Gallery[];
     reviews: Review[];
   }
   
@@ -12,5 +12,10 @@ export interface Camper {
     author: string;
     comment: string;
     rating: number;
+  }
+
+  export interface Gallery {
+    thumb: string;
+    original: string;
   }
   

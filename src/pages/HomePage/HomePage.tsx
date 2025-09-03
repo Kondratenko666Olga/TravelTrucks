@@ -46,8 +46,7 @@ const HomePage: React.FC = () => {
 
         <HomeButton 
         variant="contained"
-        // component={Link}
-        //   to="/catalog"
+        href="/catalog"
         >
           View Now
         </HomeButton>

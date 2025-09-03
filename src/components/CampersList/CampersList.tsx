@@ -8,7 +8,7 @@ const CampersList: React.FC = () => {
   const dispatch = useAppDispatch();
   
   // Явно вказуємо, що campersList є масивом типу Camper[]
-  const { campersList, status } = useAppSelector((state) => state.campers as { campersList: Camper[]; status: string });
+  const { campersList, status } = useAppSelector((state) => state.campers as { campersList: { items: Camper[]}; status: string });
 
   useEffect(() => {
     dispatch(fetchCampers());
@@ -24,11 +24,11 @@ const CampersList: React.FC = () => {
 
   return (
     <Box display="flex" flexWrap="wrap" justifyContent="space-around" gap={4}>
-      {campersList.map((camper) => (
+      {campersList.items.map((camper) => (
         <Card key={camper.id} sx={{ width: 300 }}>
           <CardMedia
             component="img"
-            image={camper.imageUrl}
+            image={camper.gallery[0].original}
             alt={camper.name}
             sx={{ height: 180 }}
           />

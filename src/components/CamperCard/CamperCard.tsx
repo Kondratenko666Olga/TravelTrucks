@@ -13,7 +13,7 @@ const CamperCard: React.FC<CamperCardProps> = ({ camper }) => {
       <CardMedia
         component="img"
         height="140"
-        image={camper.imageUrl}
+        image={camper.gallery[0].original}
         alt={camper.name}
       />
       <CardContent>

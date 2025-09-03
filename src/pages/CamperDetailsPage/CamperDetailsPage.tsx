@@ -33,7 +33,7 @@ const CamperDetailsPage: React.FC = () => {
             <Box flex={1}>
               <CardMedia
                 component="img"
-                image={camper.imageUrl}
+                image={camper.gallery[0].original}
                 alt={camper.name}
                 style={{ maxWidth: '100%', borderRadius: '8px' }}
               />
